@@ -102,11 +102,27 @@ curl -X DELETE "http://127.0.0.1:8000/session/abc123"
 
 ---
 
-## Future Improvements
-- Add authentication for API security
-- Improve function retrieval using advanced AI models
-- Implement logging for better debugging
+## Screenshots
 
-### Contributions
-Feel free to contribute by opening an issue or a PR! 🚀
+### 1. Session creation and execution 
+<div align="center">
+  <img src="./ss/Screenshot_1.png" alt="Execution Example" width="45%">
+  <img src="./ss/Screenshot_2.png" alt="Session Creation" width="45%">
+</div>
 
+### 2. Examples of execution of some commands 
+<div align="center">
+  <img src="./ss/Screenshot_3.png" alt="Function Execution" width="45%">
+  <img src="./ss/Screenshot_4.png" alt="Shell Command" width="45%">
+</div>
+
+### 3. Application Launch & Session Context  
+<div align="center">
+  <img src="./ss/Screenshot_5.png" alt="Application Launch" width="45%">
+  <img src="./ss/Screenshot_6.png" alt="Session Context" width="45%">
+</div>
+
+### 4. Session deletion 
+<div align="center">
+  <img src="./ss/Screenshot_7.png" alt="Health Check" width="45%">
+</div>
