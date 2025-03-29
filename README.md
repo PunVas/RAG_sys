@@ -1,7 +1,7 @@
 # LLM RAG Function Executor API
 
 ## Overview
-This project is a **Function Execution API** powered by **LLM(all-MiniLM-L6-v2)** and **session management**. It takes a **prompt**, finds which function to run, generates the code dynamically, executes it, and returns the output. It can also execute **shell commands** and **launch  some apps**.
+This is a **Function exec API** powered by **LLM(all-MiniLM-L6-v2)** and **session management**. It takes a **prompt**, finds which function to run, generates the code dynamically, executes it, and returns the output. It can also execute **shell commands** and **launch  some apps**.
 
 *I have tried my best to make it work on both linux and windows but currently tested only on windows.*
 
