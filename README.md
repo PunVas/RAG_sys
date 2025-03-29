@@ -5,6 +5,7 @@ This project is a **Function Execution API** powered by **LLMs (Large Language M
 
 *I have tried my best to make it work on both linux and windows but currently tested only on windows.*
 
+*I have use an LLM to generate some dummy functions like open_chrome, open_task_manager, etc.*
 It supports:
 - **Session Management** (track previous prompts and executions)
 - **Dynamic Function Execution** (run generated code securely)
