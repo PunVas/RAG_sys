@@ -104,19 +104,19 @@ curl -X DELETE "http://127.0.0.1:8000/session/abc123"
 
 ## Screenshots
 
-### 1. Session creation and execution 
+### 1. Session creation and open chrome 
 <div align="center">
   <img src="./ss/Screenshot_1.png" alt="Execution Example" width="45%">
   <img src="./ss/Screenshot_2.png" alt="Session Creation" width="45%">
 </div>
 
-### 2. Examples of execution of some commands 
+### 2. Show system stats and custom command execution
 <div align="center">
   <img src="./ss/Screenshot_3.png" alt="Function Execution" width="45%">
   <img src="./ss/Screenshot_4.png" alt="Shell Command" width="45%">
 </div>
 
-### 3. Application Launch & Session Context  
+### 3. NetworkInfo  & Session Context  
 <div align="center">
   <img src="./ss/Screenshot_5.png" alt="Application Launch" width="45%">
   <img src="./ss/Screenshot_6.png" alt="Session Context" width="45%">
