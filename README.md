@@ -8,7 +8,7 @@ This is a **Function exec API** powered by **LLM(all-MiniLM-L6-v2)** and **sessi
 *I have use an LLM to generate some dummy functions like open_chrome, open_task_manager, etc.*
 It supports:
 - **Session Management** (track previous prompts and executions)
-- **Dynamic Function Execution** (run generated code securely)
+- **Dynamic Function Execution** (run generated code)
 - **Executing Shell Commands** (run terminal commands via API)
 - **Opening Applications** (launch apps from a prompt)
 - And many more...
