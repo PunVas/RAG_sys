@@ -1,0 +1,8 @@
+fastapi==0.109.0
+uvicorn==0.24.0
+pydantic==2.6.0
+sentence-transformers==2.3.1
+chromadb==0.4.22
+psutil==5.9.6
+web-browser
+numpy==1.26.3
