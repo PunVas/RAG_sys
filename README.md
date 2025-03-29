@@ -45,7 +45,7 @@ curl -X POST "http://127.0.0.1:8000/create-session"
 #### Response:
 ```json
 {
-  "session_id": "abc123"
+  "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"
 }
 ```
 
@@ -62,14 +62,14 @@ curl -X POST "http://127.0.0.1:8000/execute" \
   "function": "run_shell_command",
   "code": "<generated code>",
   "output": "file1.txt\nfile2.txt",
-  "session_id": "abc123"
+  "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"
 }
 ```
 
 ### 3. Get Session Context
 Retrieve the session’s previous interactions.
 ```sh
-curl -X GET "http://127.0.0.1:8000/session-context/abc123"
+curl -X GET "http://127.0.0.1:8000/session-context/40862fa9-09c8-456e-b851-667f32c109d8"
 ```
 #### Response:
 ```json
@@ -81,7 +81,7 @@ curl -X GET "http://127.0.0.1:8000/session-context/abc123"
 
 ### 4. Delete a Session
 ```sh
-curl -X DELETE "http://127.0.0.1:8000/session/abc123"
+curl -X DELETE "http://127.0.0.1:8000/session/40862fa9-09c8-456e-b851-667f32c109d8"
 ```
 #### Response:
 ```json
