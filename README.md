@@ -1,13 +1,16 @@
-# LLM RAG Function Executor with Session Management
+# LLM RAG Function Executor API
 
 ## Overview
 This project is a **Function Execution API** powered by **LLMs (Large Language Models)** and **session management**. It takes a **prompt**, figures out which function to run, generates the code dynamically, executes it, and returns the output. It can also execute **shell commands** and **launch applications**.
+
+*I have tried my best to make it work on both linux and windows but currently tested only on windows.*
 
 It supports:
 - **Session Management** (track previous prompts and executions)
 - **Dynamic Function Execution** (run generated code securely)
 - **Executing Shell Commands** (run terminal commands via API)
 - **Opening Applications** (launch apps from a prompt)
+- And many more...
 
 ---
 
@@ -21,8 +24,8 @@ It supports:
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/llm-function-executor.git
-   cd llm-function-executor
+   git clone https://github.com/PunVas/RAG_sys.git
+   cd RAG_sys
    ```
 2. Install dependencies:
    ```sh
@@ -34,77 +37,13 @@ It supports:
    ```
 4. The API will be available at `http://127.0.0.1:8000/`
 
+5. Want to try apis in browser itself? go to `http://127.0.0.1:8000/docs`
+   
 ---
 
 ## How to Use
-### 1. Create a Session
-A session helps track previous interactions.
-```sh
-curl -X POST "http://127.0.0.1:8000/create-session"
-```
-#### Response:
-```json
-{
-  "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"
-}
-```
 
-### 2. Execute a Function with a Prompt
-Send a prompt to execute a function dynamically.
-```sh
-curl -X POST "http://127.0.0.1:8000/execute" \
-     -H "Content-Type: application/json" \
-     -d '{"prompt": "run_shell_command",
-          "parameters": {"command": "ls"},
-          "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"}
-```
-#### Response:
-```json
-{
-  "function": "run_shell_command",
-  "code": "<generated code>",
-  "output": "file1.txt\nfile2.txt",
-  "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"
-}
-```
-
-### 3. Get Session Context
-Retrieve the session’s previous interactions.
-```sh
-curl -X GET "http://127.0.0.1:8000/session-context/40862fa9-09c8-456e-b851-667f32c109d8"
-```
-#### Response:
-```json
-{
-  "context": ["run_shell_command"],
-  "function_history": ["run_shell_command"]
-}
-```
-
-### 4. Delete a Session
-```sh
-curl -X DELETE "http://127.0.0.1:8000/session/40862fa9-09c8-456e-b851-667f32c109d8"
-```
-#### Response:
-```json
-{
-  "message": "Session deleted successfully"
-}
-```
-
----
-
-## Endpoints Summary
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/create-session` | Create a new session |
-| `POST` | `/execute` | Execute a function with a prompt |
-| `GET` | `/session-context/{session_id}` | Get session history |
-| `DELETE` | `/session/{session_id}` | Delete a session |
-
----
-
-## Screenshots
+### Screenshots
 
 ### 1. Session creation and open chrome 
 <div align="center">
