@@ -54,7 +54,9 @@ Send a prompt to execute a function dynamically.
 ```sh
 curl -X POST "http://127.0.0.1:8000/execute" \
      -H "Content-Type: application/json" \
-     -d '{"prompt": "run_shell_command", "parameters": {"command": "ls"}}'
+     -d '{"prompt": "run_shell_command",
+          "parameters": {"command": "ls"},
+          "session_id": "40862fa9-09c8-456e-b851-667f32c109d8"}
 ```
 #### Response:
 ```json
