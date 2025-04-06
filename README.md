@@ -1,3 +1,5 @@
+![Banner](https://www.microsoft.com/en-us/research/wp-content/uploads/2024/02/NEWGraphRag-TWLIFB-1200x627-1.jpg)
+
 # LLM RAG Function Executor API
 
 ## Overview
